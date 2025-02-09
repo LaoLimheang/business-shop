@@ -1,0 +1,231 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: white;
+    color: black;
+}
+header{
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/image/1\ \(16\).jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+.hero .btn {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    padding: 12px 20px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    
+}
+nav ul li a {
+    
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sections */
+.services, .portfolio, .testimonials, .contact {
+    padding: 50px 20px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    color: black;
+
+}
+.portfolio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Portfolio */
+.portfolio-container img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.portfolio-container img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgb(51, 51, 51);
+}
+/*service*/
+.service-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    
+}
+.service{
+    text-align: center;
+    padding: 30px;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+.contact p{
+    font-family: "Bokor", serif;
+    
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    gap: 10px;
+}
+.contact a:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    color: #007bff;
+}
+input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    background: #007bff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.text-content button {
+    background-color: #005ec2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.text-content button:hover {
+    background-color: #007bff;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.text-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+.container{
+    border-radius: 10px;
+    color: white;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.hero-content{
+    color: wihte;
+}
+.image-content img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgb(51, 51, 51);
+}
